@@ -37,6 +37,15 @@ Ronflex.configure do |config|
 end
 ```
 
+## Enable or disable ronflex
+```ruby
+# Playing the pokeflute, Ronflex wakes up and no longer blocks the road
+Ronflex.play_pokeflute
+
+# Stop the pokeflute, Ronflex falls asleep and blocks the road again
+Ronflex.play_pokeflute
+```
+
 ## Configuration Options
 
 - excluded_path (Array): A list of paths that are always accessible, even when the application is in maintenance mode.

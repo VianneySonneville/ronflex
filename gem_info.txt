@@ -1,5 +1,0 @@
-## TEST ##
-
-## PUSH GEM ##
-
-gem build ronflex.gemspec

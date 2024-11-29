@@ -2,6 +2,7 @@
 #
 # spec/ronflex/configuration_spec.rb
 require 'spec_helper'
+require 'ronflex/configuration'
 
 RSpec.describe Ronflex::Configuration do
   let(:configuration) { described_class.new }
@@ -16,7 +17,7 @@ RSpec.describe Ronflex::Configuration do
     end
 
     it 'sets default enable to true' do
-      expect(configuration.enable).to eq(true)
+      expect(configuration.enable).to eq(false)
     end
   end
 

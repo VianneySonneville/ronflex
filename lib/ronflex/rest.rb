@@ -1,3 +1,7 @@
+# frozen_string_literal: true
+
+require 'rack'
+
 module Ronflex
   class Rest
     # Initializes the middleware with the given app

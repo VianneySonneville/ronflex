@@ -2,6 +2,8 @@
 #
 # spec/ronflex/rest_spec.rb
 require 'spec_helper'
+require "ronflex"
+require 'ronflex/rest'
 
 RSpec.describe Ronflex::Rest do
   let(:app) { double("App") } # Utilisez un double pour simuler l'application rack

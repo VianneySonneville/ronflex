@@ -43,7 +43,7 @@ end
 Ronflex.play_pokeflute
 
 # Stop the pokeflute, Ronflex falls asleep and blocks the road again
-Ronflex.play_pokeflute
+Ronflex.stop_pokeflute
 ```
 
 ## Configuration Options

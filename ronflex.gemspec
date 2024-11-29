@@ -8,14 +8,18 @@ Gem::Specification.new do |spec|
   spec.authors = ["vianney.sonneville"]
   spec.email = ["vianney.sonneville@unova.fr"]
 
-  spec.summary = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description = "TODO: Write a longer description or delete this line."
-  spec.homepage = "TODO: Put your gem's website or public repo URL here."
+  spec.summary = "Gem that provides a middleware for managing requests and displaying a custom maintenance page during downtime or maintenance."
+  spec.description = "Ronflex is a Ruby gem that provides a middleware for managing requests and displaying a custom maintenance page during downtime or maintenance. It also offers configuration options to handle user access and authorization rules, making it easy to implement a custom maintenance mode in your application."
+  spec.homepage = "https://rubygems.org/gems/ronflex."
   spec.required_ruby_version = ">= 3.0.0"
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
+  spec.metadata = {
+    "allowed_push_host" => "https://rubygems.org",
+    "homepage_uri" => spec.homepage,
+    "source_code_uri" => "https://github.com/VianneySonneville/ronflex  ",  
+    "changelog_uri" => "https://github.com/VianneySonneville/ronflex/blob/main/CHANGELOG.md"
+  }
 
-  spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
   spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
 

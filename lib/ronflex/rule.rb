@@ -40,7 +40,7 @@ module Ronflex
     # @param request [Object] The request to check (e.g., an HTTP request object).
     # @return [Boolean] `true` if the model matches the rule's type and satisfies the block's logic, `false` otherwise.
     def matches?(model, request)
-      model == type && rule.call(model, request)
+      rule.call(model, request)
     end
   end
 end

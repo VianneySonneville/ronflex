@@ -6,18 +6,17 @@ require "ronflex/rest"
 
 module Ronflex  
   class << self
-    # Method to configure `Snorlax` with a block
+    # Method to configure `Ronflex` with a block
     #
-    # @yield [config] The block receives an instance of `Snorlax::Configuration`
-    # @yieldparam config [Snorlax::Configuration] The configuration object to modify.
+    # @yield [config] The block receives an instance of `Ronflex::Configuration`
+    # @yieldparam config [Ronflex::Configuration] The configuration object to modify.
     def configure
-      @configuration ||= Configuration.new
       yield @configuration if block_given?
     end
 
     # Accesses global configuration
     #
-    # @return [Snorlax::Configuration] The global instance of the configuration
+    # @return [Ronflex::Configuration] The global instance of the configuration
     def configuration
       @configuration ||= Configuration.new
     end

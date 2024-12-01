@@ -111,7 +111,7 @@ module Ronflex
     # request = OpenStruct.new(path: "/admin/dashboard")
     # config.allowed?(model, request) # => true or false
     def allowed?(model, request)
-      rules.any? { |rule| rule.matches?(model, request) }
+      rules.empty? || rules.any? { |rule| rule.matches?(model, request) }
     end
 
 

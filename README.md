@@ -18,8 +18,8 @@ Or install it yourself as:
 
 ```ruby
 Ronflex.configure do |config|
-  # The list of paths that are always accessible (no restrictions)
-  config.excluded_path = ["/health_check", "/status"]
+  # The list of paths that are always accessible by default "/health_check" and "/favicon.ico"(no restrictions)
+  config.excluded_path += ["/status"]
 
   # Define a provider for user model (can be a Proc or Lambda)
   config.provider = ->(env) { User.find_by(api_key: env['HTTP_API_KEY']) }

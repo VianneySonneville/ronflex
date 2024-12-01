@@ -37,7 +37,7 @@ module Ronflex
     # These paths are ignored by the defined rules.
     #
     # @return [Array<String>]
-    DEFAULT_EXCLUDED_PATHS = ["/health_check"]
+    DEFAULT_EXCLUDED_PATHS = ["/health_check", "/favicon.ico"]
     # Default provider.
     # by default, it is a lambda which returns `nil`.
     #

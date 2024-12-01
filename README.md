@@ -150,5 +150,9 @@ When the application is in maintenance mode, the user will see a page like the f
 </html>
 ```
 
+## Contributors Helps
+How to allow modification of the snorlax instance directly in the application to reflect changes made in the Rails console?
+
+
 ## Error Handling
 In case of issues loading the custom maintenance page (e.g., if the file does not exist), Ronflex will fallback to a default maintenance page.

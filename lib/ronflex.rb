@@ -2,6 +2,7 @@
 
 require_relative "ronflex/version"
 require "ronflex/configuration"
+require "ronflex/rest"
 
 module Ronflex  
   class << self

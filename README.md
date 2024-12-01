@@ -8,11 +8,11 @@
 
 Run:
 
-    bundle add zarby
+    bundle add ronflex
 
 Or install it yourself as:
 
-    $ gem install zarby
+    $ gem install ronflex
 
 ## Configuration
 
